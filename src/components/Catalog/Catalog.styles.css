@@ -1,0 +1,14 @@
+.catalog {
+  display: flex;
+  justify-content: center;
+  max-width: 1201px;
+  margin: auto;
+}
+
+.catalog-title {
+  font-weight: 700;
+  font-size: 30px;
+  color: #444B58;
+  width: 100%;
+  text-align: start;
+}
