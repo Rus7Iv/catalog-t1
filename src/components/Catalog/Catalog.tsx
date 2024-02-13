@@ -1,13 +1,18 @@
 import { useEffect, useState } from 'react';
 import './Catalog.styles.css'
 
-type Product = {
+type BaseProduct = {
   id: number;
-  name: string;
-  price: number;
   image: string;
   category: string;
 };
+
+type RequiredFields = {
+  name: string;
+  price: number;
+};
+
+type Product = Partial<BaseProduct> & Required<RequiredFields>;
 
 const Catalog = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -24,11 +29,15 @@ const Catalog = () => {
       <h1 className='catalog-title'>Catalog</h1>
       <div className='catalog-list'>  
         {products.map(product => (
-          <div key={product.id} className='catalog-card'>
-            <img src={'/' + product.image} alt={product.name} />
-            <h2 className='product-name'>{product.name}</h2>
-            <p className='product-price'>{product.price} $</p>
-          </div>
+          product.name && product.price ? (
+            <div key={product.id} className='catalog-card'>
+              <div className='product-img'>
+                <img src={product.image ? '/' + product.image : 'public/non_image.png'} alt={product.name} />
+              </div>
+              <h2 className='product-name'>{product.name}</h2>
+              <p className='product-price'>{product.price} $</p>
+            </div>
+          ) : null
         ))}
       </div>
     </div>

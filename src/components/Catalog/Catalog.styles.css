@@ -18,13 +18,22 @@
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 10px;
 }
 
 .catalog-card {
-  margin: 0 20px 10px 0;
-  font-weight: 600;
-  font-size: 16px;
+  margin-right: 20px;
+  margin-bottom: 10px;
   cursor: pointer;
+}
+
+.product-img {
+  width: 280px;
+  height: 295px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-name {
