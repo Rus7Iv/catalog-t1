@@ -1,0 +1,36 @@
+.button-container.filled {
+  cursor: pointer;
+  border: 1px solid var(--sec-bg);
+  background: var(--text);
+  border-radius: 4px;
+  padding: 20px 50px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+.button-container.outlined {
+  cursor: pointer;
+  border: 1px solid var(--text);
+  background: transparent;
+  border-radius: 4px;
+  padding: 20px 50px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.button-container.active {
+  cursor: pointer;
+  border: 1px solid var(--sec-bg);
+  background: var(--accent);
+  border-radius: 4px;
+  padding: 20px 50px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+.button-container:hover {
+  filter: brightness(90%);
+}
