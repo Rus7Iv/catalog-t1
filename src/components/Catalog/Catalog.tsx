@@ -22,14 +22,15 @@ const Catalog = () => {
   return (
     <div className='catalog'>
       <h1 className='catalog-title'>Catalog</h1>
-      {products.map(product => (
-        <div key={product.id} className='product'>
-          <img src={'/' + product.image} alt={product.name} />
-          <h2>{product.name}</h2>
-          <p>{product.price}</p>
-          <p>{product.category}</p>
-        </div>
-      ))}
+      <div className='catalog-list'>  
+        {products.map(product => (
+          <div key={product.id} className='catalog-card'>
+            <img src={'/' + product.image} alt={product.name} />
+            <h2 className='product-name'>{product.name}</h2>
+            <p className='product-price'>{product.price} $</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

@@ -2,17 +2,73 @@
     "catalog": [
       {
         "id": 1,
-        "name": "Товар 1",
-        "price": 100,
+        "name": "Nike Air Force 1 '07 QS",
+        "price": 110,
         "image": "public/product_image.png",
         "category": "Категория 1"
       },
       {
         "id": 2,
-        "name": "Товар 2",
-        "price": 200,
+        "name": "Nike Air Force 1 '07 QS",
+        "price": 110,
         "image": "public/product_image.png",
-        "category": "Категория 2"
+        "category": "Категория 1"
+      },
+      {
+        "id": 3,
+        "name": "Nike Air Force 1 '07 QS",
+        "price": 110,
+        "image": "public/product_image.png",
+        "category": "Категория 1"
+      },
+      {
+        "id": 4,
+        "name": "Nike Air Force 1 '07 QS",
+        "price": 110,
+        "image": "public/product_image.png",
+        "category": "Категория 1"
+      },
+      {
+        "id": 5,
+        "name": "Nike Air Force 1 '07 QS",
+        "price": 110,
+        "image": "public/product_image.png",
+        "category": "Категория 1"
+      },
+      {
+        "id": 6,
+        "name": "Nike Air Force 1 '07 QS",
+        "price": 110,
+        "image": "public/product_image.png",
+        "category": "Категория 1"
+      },
+      {
+        "id": 7,
+        "name": "Nike Air Force 1 '07 QS",
+        "price": 110,
+        "image": "public/product_image.png",
+        "category": "Категория 1"
+      },
+      {
+        "id": 8,
+        "name": "Nike Air Force 1 '07 QS",
+        "price": 110,
+        "image": "public/product_image.png",
+        "category": "Категория 1"
+      },
+      {
+        "id": 9,
+        "name": "Nike Air Force 1 '07 QS",
+        "price": 110,
+        "image": "public/product_image.png",
+        "category": "Категория 1"
+      },
+      {
+        "id": 10,
+        "name": "Nike Air Force 1 '07 QS",
+        "price": 110,
+        "image": "public/product_image.png",
+        "category": "Категория 1"
       }
     ]
   }

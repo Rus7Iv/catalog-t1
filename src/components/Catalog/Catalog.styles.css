@@ -1,6 +1,8 @@
 .catalog {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
   max-width: 1201px;
   margin: auto;
 }
@@ -11,4 +13,26 @@
   color: #444B58;
   width: 100%;
   text-align: start;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-card {
+  margin: 0 20px 10px 0;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.product-name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.product-price {
+  font-weight: 400;
+  font-size: 20px;
 }
