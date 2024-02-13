@@ -1,15 +1,16 @@
 import './Button.styles.css';
 
 interface ButtonProps {
-  typeBtn: 'filled' | 'outlined';
+  typeBtn: 'filled' | 'outlined' | 'flat';
   children: React.ReactNode;
   isActive?: boolean;
+  className?: string;
 }
 
-const Button = ({ typeBtn, children, isActive = false }: ButtonProps) => {
+const Button = ({ typeBtn, children, isActive = false, className = '' }: ButtonProps) => {
   const buttonStyle = typeBtn === 'filled' && isActive ? 'active' : typeBtn;
   return (
-    <button className={`button-container ${buttonStyle}`}>
+    <button className={`button-container ${buttonStyle} ${className}`}>
       {children}
     </button>
   );

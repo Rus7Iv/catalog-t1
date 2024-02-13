@@ -1,5 +1,48 @@
 .parameters {
-  width: 280px;
+  width: 240px;
   height: 535px;
   background-color: #FFF4EE;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.parameters-title {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--text);
+}
+
+.button-full-width {
+  width: 100%;
+}
+
+.categories-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text);
+  margin: 0;
+}
+
+.categories-container {
+  display: grid;
+  border: 1px solid #DBBBA9;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 57px);
+  width: 100%;
+  gap: 0;
+}
+
+.category {
+  border: 1px solid #DBBBA9;
+  background-color: transparent;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: var(--text);
 }

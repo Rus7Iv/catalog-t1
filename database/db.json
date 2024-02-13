@@ -70,6 +70,32 @@
         "image": "public/product_image.png",
         "category": "Категория 1"
       }
+    ],
+    "categories": [
+      {
+        "name": "smartphones"
+      },
+      {
+        "name": "laptops"
+      },
+      {
+        "name": "sneakers"
+      },
+      {
+        "name": "sneakers"
+      },
+      {
+        "name": "sneakers"
+      },
+      {
+        "name": "sneakers"
+      },
+      {
+        "name": "sneakers"
+      },
+      {
+        "name": "sneakers"
+      }
     ]
   }
   
