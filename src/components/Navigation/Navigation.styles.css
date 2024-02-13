@@ -1,7 +1,7 @@
 .navigation-container {
   display: flex;
   justify-content: space-between;
-  width: 1201px;
+  max-width: 1201px;
   height: 49px;
 }
 
