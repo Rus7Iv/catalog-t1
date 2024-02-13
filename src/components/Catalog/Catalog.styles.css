@@ -15,16 +15,27 @@
   text-align: start;
 }
 
+.catalog-content {
+  display: flex;
+  justify-content: space-between;
+  grid-column-gap: 20px;
+}
+
+.Parameters {
+  flex: 1;
+  margin-right: 20px;
+} 
+
 .catalog-list {
+  flex: 3;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  row-gap: 10px;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
 }
 
 .catalog-card {
-  margin-right: 20px;
-  margin-bottom: 10px;
   cursor: pointer;
 }
 

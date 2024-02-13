@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Catalog.styles.css'
+import Parameters from '../Parameters/Parameters';
 
 type BaseProduct = {
   id: number;
@@ -27,18 +28,21 @@ const Catalog = () => {
   return (
     <div className='catalog'>
       <h1 className='catalog-title'>Catalog</h1>
-      <div className='catalog-list'>  
-        {products.map(product => (
-          product.name && product.price ? (
-            <div key={product.id} className='catalog-card'>
-              <div className='product-img'>
-                <img src={product.image ? '/' + product.image : 'public/non_image.png'} alt={product.name} />
+      <div className='catalog-content'>
+        <Parameters />
+        <div className='catalog-list'>  
+          {products.map(product => (
+            product.name && product.price ? (
+              <div key={product.id} className='catalog-card'>
+                <div className='product-img'>
+                  <img src={product.image ? '/' + product.image : 'public/non_image.png'} alt={product.name} />
+                </div>
+                <h2 className='product-name'>{product.name}</h2>
+                <p className='product-price'>{product.price} $</p>
               </div>
-              <h2 className='product-name'>{product.name}</h2>
-              <p className='product-price'>{product.price} $</p>
-            </div>
-          ) : null
-        ))}
+            ) : null
+          ))}
+        </div>
       </div>
     </div>
   );
