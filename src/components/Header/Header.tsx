@@ -1,21 +1,11 @@
-import { HeaderProps } from './types/interfaces'
-import { NAV_LINKS } from './types/navLinks'
+import Navigation from '../Navigation/Navigation'
+import { HEADER_LINKS } from './types/headerLinks'
 import './Header.styles.css'
 
-const Header = ({ navLinks = NAV_LINKS }: HeaderProps) => (
+const Header = () => (
   <div className='header'>
-    <div className="header-container">
-      <div className='header-logo'>
-        Goods4you
-      </div>
-      <div className='header-menu'>
-        {navLinks.map(({ href, text, icon: Icon }) => (
-          <a href={href} className="header-link" key={text}>
-            {text}
-            {Icon && <Icon />}
-          </a>
-        ))}
-      </div>
+    <div className='header-container'>
+      <Navigation navLinks={HEADER_LINKS} />
     </div>
   </div>
 )

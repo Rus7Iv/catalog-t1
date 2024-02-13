@@ -4,6 +4,6 @@ export interface NavLink {
   icon?: React.ComponentType
 }
 
-export interface HeaderProps {
+export interface NavProps {
   navLinks?: NavLink[]
 }

@@ -1,7 +1,7 @@
 import { CartIcon } from "../../../assets/CartIcon"
-import { NavLink } from "./interfaces"
+import { NavLink } from "../../Navigation/types/interfaces"
 
-export const NAV_LINKS: NavLink[] = [
+export const HEADER_LINKS: NavLink[] = [
   { href: '#', text: 'Catalog' },
   { href: '#', text: 'About us' },
   { href: '#', text: 'Product selection' },
