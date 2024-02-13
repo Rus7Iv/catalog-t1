@@ -3,8 +3,10 @@ import { FOOTER_LINKS } from './types/footerLinks'
 import './Footer.styles.css'
 
 const Footer = () => (
-  <footer>
-    <Navigation navLinks={FOOTER_LINKS} />
+  <footer className='footer'>
+    <div className='footer-container'>
+      <Navigation navLinks={FOOTER_LINKS} />
+    </div>
   </footer>
 )
 

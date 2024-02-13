@@ -2,10 +2,17 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #444B58;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  z-index: 10;
   width: 100%;
-  margin: 0;
+  position: absolute;
+  bottom: 0;
+  background-color: #444B58;
+}
+
+.footer-container {
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 10;
+  max-width: 1201px;
+  width: 100%;
 }

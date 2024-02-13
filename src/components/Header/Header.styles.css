@@ -7,4 +7,6 @@ header {
   position: absolute;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   z-index: 10;
+  max-width: 1201px;
+  width: 100%;
 }
