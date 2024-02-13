@@ -1,0 +1,19 @@
+{
+    "catalog": [
+      {
+        "id": 1,
+        "name": "Товар 1",
+        "price": 100,
+        "image": "public/product_image.png",
+        "category": "Категория 1"
+      },
+      {
+        "id": 2,
+        "name": "Товар 2",
+        "price": 200,
+        "image": "public/product_image.png",
+        "category": "Категория 2"
+      }
+    ]
+  }
+  
