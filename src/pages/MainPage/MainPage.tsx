@@ -1,8 +1,9 @@
+import Hero from "../../components/Hero/Hero"
 
 const MainPage = () => {
   return (
     <>
-      Hello 1
+      <Hero />
     </>
   )
 }

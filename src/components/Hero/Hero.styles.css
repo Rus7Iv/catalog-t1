@@ -1,0 +1,46 @@
+.hero {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 528px;
+  background-color: #484283;
+  top: 0;
+}
+
+.hero-background {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.12);
+  position: absolute;
+  bottom: 40px;
+  margin: 0;
+}
+
+.hero-description {
+  max-width: 1201px;
+  display: flex;
+  align-items: flex-start;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 140%;
+  color: #fff;
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+  width: 28%;
+}
