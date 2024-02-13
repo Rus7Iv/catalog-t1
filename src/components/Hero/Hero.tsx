@@ -1,3 +1,4 @@
+import Button from '../Button/Button'
 import './Hero.styles.css'
 
 const Hero = () => (
@@ -12,7 +13,7 @@ const Hero = () => (
       <span className='hero-text'>
         We sell smartphones, laptops, clothes, shoes and many other products at low prices
       </span>
-      {/* button "Go to shoping" */}
+      <Button children={"Go to shopping"} typeBtn={'filled'} isActive />
     </div>
   </div>
 )
