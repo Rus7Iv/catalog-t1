@@ -1,8 +1,10 @@
-.header {
+header {
   display: flex;
   justify-content: center;
 }
 
 .header-container {
+  position: absolute;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 10;
 }

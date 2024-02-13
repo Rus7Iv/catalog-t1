@@ -3,9 +3,9 @@ import { FOOTER_LINKS } from './types/footerLinks'
 import './Footer.styles.css'
 
 const Footer = () => (
-  <div className='footer'>
+  <footer>
     <Navigation navLinks={FOOTER_LINKS} />
-  </div>
+  </footer>
 )
 
 export default Footer
