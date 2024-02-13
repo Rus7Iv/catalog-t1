@@ -10,7 +10,7 @@
 .catalog-title {
   font-weight: 700;
   font-size: 30px;
-  color: #444B58;
+  color: var(--text);
   width: 100%;
   text-align: start;
 }
@@ -30,9 +30,11 @@
 .product-name {
   font-weight: 600;
   font-size: 16px;
+  color: var(--text);
 }
 
 .product-price {
   font-weight: 400;
   font-size: 20px;
+  color: var(--text);
 }
