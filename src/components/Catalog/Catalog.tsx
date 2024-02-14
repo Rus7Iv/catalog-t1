@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Catalog.styles.css'
 import Parameters from '../Parameters/Parameters';
+import Button from '../Button/Button';
 
 type BaseProduct = {
   id: number;
@@ -21,7 +22,7 @@ const Catalog = () => {
   useEffect(() => {
     fetch('http://localhost:4000/catalog')
       .then(response => response.json())
-      .then(data => setProducts(data))
+      .then(data => setProducts(data.slice(0, 9)))
       .catch(error => console.error('Ошибка:', error));
   }, []);
 
@@ -42,6 +43,9 @@ const Catalog = () => {
               </div>
             ) : null
           ))}
+          <div className='btn-container'>
+            <Button children={"Show more"} typeBtn={'filled'} isActive />
+          </div>
         </div>
       </div>
     </div>
