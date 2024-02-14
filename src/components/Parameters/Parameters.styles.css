@@ -46,3 +46,7 @@
   text-align: center;
   color: var(--text);
 }
+
+.category:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
