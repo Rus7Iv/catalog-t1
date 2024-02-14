@@ -1,3 +1,4 @@
+import AboutUs from "../../components/AboutUs/AboutUs"
 import Catalog from "../../components/Catalog/Catalog"
 import Hero from "../../components/Hero/Hero"
 
@@ -6,6 +7,7 @@ const MainPage = () => {
     <>
       <Hero />
       <Catalog />
+      <AboutUs />
     </>
   )
 }

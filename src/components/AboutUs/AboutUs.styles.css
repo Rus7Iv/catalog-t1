@@ -1,0 +1,38 @@
+.aboutUs {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 528px;
+    background-color: #484283;
+    top: 0;
+  }
+  
+  .aboutUs-description {
+    max-width: 1201px;
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+  }
+  
+  .aboutUs-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 140%;
+    color: #fff;
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  
+  .aboutUs-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff;
+    width: 33%;
+    margin-bottom: 40px;
+    white-space: pre-line;
+  }
