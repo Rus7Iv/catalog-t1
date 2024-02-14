@@ -1,3 +1,4 @@
+import React from 'react';
 import './Button.styles.css';
 
 interface ButtonProps {
@@ -5,12 +6,13 @@ interface ButtonProps {
   children: React.ReactNode;
   isActive?: boolean;
   className?: string;
+  onClick?: () => void;
 }
 
-const Button = ({ typeBtn, children, isActive = false, className = '' }: ButtonProps) => {
+const Button = ({ typeBtn, children, isActive = false, className = '', onClick }: ButtonProps) => {
   const buttonStyle = typeBtn === 'filled' && isActive ? 'active' : typeBtn;
   return (
-    <button className={`button-container ${buttonStyle} ${className}`}>
+    <button className={`button-container ${buttonStyle} ${className}`} onClick={onClick}>
       {children}
     </button>
   );
