@@ -1,6 +1,7 @@
 import AboutUs from "../../components/AboutUs/AboutUs"
 import Catalog from "../../components/Catalog/Catalog"
 import Hero from "../../components/Hero/Hero"
+import Question from "../../components/Question/Question"
 import './MainPage.styles.css'
 
 const MainPage = () => {
@@ -9,6 +10,7 @@ const MainPage = () => {
       <Hero />
       <Catalog />
       <AboutUs />
+      <Question />
     </div>
   )
 }

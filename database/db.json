@@ -73,22 +73,28 @@
     ],
     "categories": [
       {
-        "name": "smartphones"
+        "name": "smartphones",
+        "img": "./public/sneakers.jpg"
       },
       {
-        "name": "laptops"
+        "name": "laptops",
+        "img": "./public/sneakers.jpg"
       },
       {
-        "name": "sneakers"
+        "name": "sneakers",
+        "img": "./public/sneakers.jpg"
       },
       {
-        "name": "sneakers"
+        "name": "sneakers",
+        "img": "./public/sneakers.jpg"
       },
       {
-        "name": "sneakers"
+        "name": "sneakers",
+        "img": "./public/sneakers.jpg"
       },
       {
-        "name": "sneakers"
+        "name": "sneakers",
+        "img": "./public/sneakers.jpg"
       },
       {
         "name": "sneakers"
