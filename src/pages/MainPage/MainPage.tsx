@@ -10,11 +10,11 @@ const MainPage = () => {
   return (
     <div className="main-page">
       <Hero />
-      <Catalog />
-      <AboutUs />
-      <Question />
-      <OurTeam />
-      <Faq />
+      <div id="catalog"><Catalog /></div>
+      <div id="aboutus"><AboutUs /></div>
+      <div id="productselection"><Question /></div>
+      <div id="ourteam"><OurTeam /></div>
+      <div id="faq"><Faq /></div>
     </div>
   )
 }
