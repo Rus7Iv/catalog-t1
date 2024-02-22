@@ -1,12 +1,13 @@
+import { RouterProvider } from "react-router-dom"
 import Footer from "./components/Footer/Footer"
 import Header from "./components/Header/Header"
-import MainPage from "./pages/MainPage/MainPage"
+import { router } from "./router/router"
 
 function App() {
   return (
     <>
       <Header />
-      <MainPage />
+      <RouterProvider router={router} />
       <Footer />
     </>
   )
