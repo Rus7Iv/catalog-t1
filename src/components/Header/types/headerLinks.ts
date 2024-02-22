@@ -6,5 +6,5 @@ export const HEADER_LINKS: NavLink[] = [
   { href: '#productselection', text: 'Product selection' },
   { href: '#ourteam', text: 'Our team' },
   { href: '#faq', text: 'FAQ' },
-  { href: '#', text: 'For staff' },
+  { href: '/admin', text: 'For staff' },
 ]
