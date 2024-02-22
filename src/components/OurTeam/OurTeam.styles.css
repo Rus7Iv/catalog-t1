@@ -1,0 +1,103 @@
+.ourTeam {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: #484283;
+  top: 0;
+  color: #fff;
+  overflow: hidden;
+}
+
+.ourTeam-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1201px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 60px;
+  padding-bottom: 140px;
+  position: relative;
+}
+
+.ourTeam-title {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.ourTeam-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  column-gap: 20px;
+  padding-bottom: 100px;
+  z-index: 1;
+}
+
+.ourTeam-list > *:nth-child(3n+2) {
+  position: relative;
+  top: 100px;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 380px;
+}
+
+.team-member::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 36, 36, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.team-member:hover::before {
+  opacity: 1;
+}
+
+.team-info {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-member:hover .team-info {
+  opacity: 1;
+}
+
+.team-name {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.team-current_position {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.ourTeam-circle--filled {
+  position: absolute;
+  top: -150px;
+  left: calc(50% + 425px);
+}
+
+.ourTeam-circle--outlined {
+  position: absolute;
+  top: -300px;
+  left: calc(50% + 550px);
+}
