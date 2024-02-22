@@ -1,5 +1,6 @@
 import AboutUs from "../../components/AboutUs/AboutUs"
 import Catalog from "../../components/Catalog/Catalog"
+import Faq from "../../components/Faq/Faq"
 import Hero from "../../components/Hero/Hero"
 import OurTeam from "../../components/OurTeam/OurTeam"
 import Question from "../../components/Question/Question"
@@ -13,6 +14,7 @@ const MainPage = () => {
       <AboutUs />
       <Question />
       <OurTeam />
+      <Faq />
     </div>
   )
 }

@@ -136,6 +136,16 @@
         "current_position": "Designer",
         "img": "./public/team/anna.png"
       }
+    ],
+    "questions": [
+      {
+        "title": "Question 1",
+        "value": "Long answer to the first question"
+      },
+      {
+        "title": "Question 2",
+        "value": "Long answer to the first question"
+      }
     ]
   }
   
