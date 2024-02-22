@@ -25,7 +25,7 @@ const Faq = () => {
     <div className='faq'>
       <div className='faq-container'>
         <h1 className='faq-title'>
-          Our team
+          FAQ
         </h1>
         <div className='faq-list'>
           {questions.map((item: IQuestion, index: number) => (
