@@ -5,6 +5,7 @@
   height: 528px;
   background-color: #484283;
   top: 0;
+  overflow: hidden;
 }
 
 .aboutUs-container {
