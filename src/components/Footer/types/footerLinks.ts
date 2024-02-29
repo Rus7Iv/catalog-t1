@@ -1,10 +1,10 @@
 import { NavLink } from "../../Navigation/types/interfaces"
 
 export const FOOTER_LINKS: NavLink[] = [
-  { href: '#', text: 'Catalog' },
-  { href: '#', text: 'About us' },
-  { href: '#', text: 'Product selection' },
-  { href: '#', text: 'Our team' },
-  { href: '#', text: 'Shipping and payment' },
-  { href: '#', text: 'Contacts' },
+  { href: '#catalog', text: 'Catalog' },
+  { href: '#aboutus', text: 'About us' },
+  { href: '#productselection', text: 'Product selection' },
+  { href: '#ourteam', text: 'Our team' },
+  { href: '#faq', text: 'FAQ' },
+  { href: '/admin', text: 'For staff' },
 ]
