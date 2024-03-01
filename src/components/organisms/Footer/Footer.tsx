@@ -1,5 +1,5 @@
-import Navigation from '../Navigation/Navigation'
 import { FOOTER_LINKS } from './types/footerLinks'
+import Navigation from '../../molecules/Navigation/Navigation'
 import './Footer.styles.css'
 
 const Footer = () => (

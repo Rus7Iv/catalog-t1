@@ -1,5 +1,5 @@
-import { Circle } from '../../assets/Circle'
-import aboutUsImage from '../../../public/aboutUs_image.jpg'
+import { Circle } from '../../../assets/Circle'
+import aboutUsImage from '../../../../public/aboutUs_image.jpg'
 import './AboutUs.styles.css'
 
 const AboutUs = () => (

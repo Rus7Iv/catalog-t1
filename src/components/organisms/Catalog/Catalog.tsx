@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Catalog.styles.css'
-import Parameters from '../Parameters/Parameters';
-import Button from '../Button/Button';
+import Button from '../../atoms/Button/Button';
+import Parameters from '../../molecules/Parameters/Parameters';
 
 type BaseProduct = {
   id: number;

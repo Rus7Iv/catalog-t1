@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Circle } from '../../assets/Circle'
+import { Circle } from '../../../assets/Circle'
 import './OurTeam.styles.css'
 
 const OurTeam = () => {

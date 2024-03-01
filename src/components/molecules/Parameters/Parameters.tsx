@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Button from '../Button/Button'
+import Button from '../../atoms/Button/Button';
 import './Parameters.styles.css'
 
 const Parameters = () => {

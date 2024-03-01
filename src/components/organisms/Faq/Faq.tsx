@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
+import { PlusBtn } from '../../../assets/PlusBtn';
 import './Faq.styles.css'
-import { PlusBtn } from '../../assets/PlusBtn';
 
 interface IQuestion {
   title: string;

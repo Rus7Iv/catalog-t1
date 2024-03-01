@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom"
-import MainPage from "../pages/MainPage/MainPage"
-import AdminPage from "../pages/AdminPage/AdminPage"
-import AdminProductPage from "../pages/AdminProductPage/AdminProductPage"
+import MainPage from "../pages/main"
+import AdminPage from "../pages/admin"
+import AdminProductPage from "../pages/admin-product"
 
 export const router = createBrowserRouter([
     {

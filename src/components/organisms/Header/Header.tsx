@@ -1,5 +1,5 @@
-import Navigation from '../Navigation/Navigation'
 import { HEADER_LINKS } from './types/headerLinks'
+import Navigation from '../../molecules/Navigation/Navigation'
 import './Header.styles.css'
 
 const Header = () => (

@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
+import Button from '../../atoms/Button/Button'
 import './Question.styles.css'
-import Button from '../Button/Button';
 
 const Question = () => {
     const [categories, setCategories] = useState<{ name: string, img?: string }[]>([]);
