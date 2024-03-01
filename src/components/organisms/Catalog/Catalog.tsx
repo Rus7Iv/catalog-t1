@@ -1,30 +1,27 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { AppDispatch } from '../../../store/store';
+import { fetchProducts } from '../../../store/actions';
 import './Catalog.styles.css'
 import Button from '../../atoms/Button/Button';
 import Parameters from '../../molecules/Parameters/Parameters';
+import { RootState } from '../../../store/reducer';
 
-type BaseProduct = {
+type Product = {
   id: number;
   image: string;
   category: string;
-};
-
-type RequiredFields = {
   name: string;
   price: number;
 };
 
-type Product = Partial<BaseProduct> & Required<RequiredFields>;
-
 const Catalog = () => {
-  const [products, setProducts] = useState<Product[]>([]);
+  const dispatch: AppDispatch = useDispatch();
+  const products: Product[] = useSelector((state: RootState) => state.products.products);
 
   useEffect(() => {
-    fetch('http://localhost:4000/catalog')
-      .then(response => response.json())
-      .then(data => setProducts(data.slice(0, 9)))
-      .catch(error => console.error('Ошибка:', error));
-  }, []);
+    dispatch(fetchProducts());
+  }, [dispatch]);
 
   return (
     <div className='catalog'>
@@ -32,7 +29,7 @@ const Catalog = () => {
       <div className='catalog__content'>
         <Parameters />
         <div className='catalog__list'>  
-          {products.map(product => (
+          {products.map((product: Product) => (
             product.name && product.price ? (
               <div key={product.id} className='catalog__card'>
                 <div className='catalog__card-img'>
