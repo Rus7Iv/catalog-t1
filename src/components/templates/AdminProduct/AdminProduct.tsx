@@ -2,8 +2,8 @@ import './AdminProduct.styles.css'
 
 const AdminProduct = () => {
   return (
-    <div className="admin-template">
-      <h1>Admin - one product</h1>
+    <div className="admin-product">
+      <h1 className='admin-product__title'>Admin - one product</h1>
     </div>
   )
 }

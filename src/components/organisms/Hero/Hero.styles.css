@@ -7,7 +7,7 @@
   top: 0;
 }
 
-.hero-background {
+.hero__background {
   width: 100%;
   text-align: center;
   font-weight: 700;
@@ -18,7 +18,7 @@
   margin: 0;
 }
 
-.hero-description {
+.hero__description {
   max-width: 1201px;
   display: flex;
   align-items: flex-start;
@@ -29,7 +29,7 @@
   z-index: 0;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 140%;
@@ -38,7 +38,7 @@
   margin-bottom: 20px;
 }
 
-.hero-text {
+.hero__text {
   font-weight: 600;
   font-size: 16px;
   line-height: 140%;

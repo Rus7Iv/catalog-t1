@@ -1,4 +1,4 @@
-.navigation-container {
+.navigation {
   display: flex;
   justify-content: space-between;
   max-width: 1201px;
@@ -6,18 +6,18 @@
   height: 49px;
 }
 
-.navigation-logo{
+.navigation__logo{
   font-weight: 700;
   font-size: 30px;
   color: #fff;
 }
 
-.navigation-menu {
+.navigation__menu {
   display: flex;
   align-items: center;
 }
 
-.navigation-link {
+.navigation__link {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
@@ -27,6 +27,6 @@
   align-items: center;
 }
 
-.navigation-link svg {
+.navigation__link svg {
   margin-left: 28px;
 }

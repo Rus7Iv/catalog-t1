@@ -13,23 +13,23 @@ const Parameters = () => {
 
   return (
     <div className='parameters'>
-      <h1 className='parameters-title'>
+      <h1 className='parameters__title'>
         Selection by parameters
       </h1>
       
-      <div className='categories'>
-      <h2 className='categories-title'>
+      <div className='parameters__categories'>
+      <h2 className='parameters__categories-title'>
         Category
       </h2>
-      <div className='categories-container'>
+      <div className='parameters__categories-container'>
         {categories.map((category, index) => (
-          <div key={index} className='category'>{category.name}</div>
+          <div key={index} className='parameters__category'>{category.name}</div>
         ))}
       </div>
       </div>
 
-      <Button children={"Apply"} typeBtn={'filled'} className="button-full-width" />
-      <Button children={"Apply"} typeBtn={'flat'} className="button-full-width" />
+      <Button children={"Apply"} typeBtn={'filled'} className="parameters__button" />
+      <Button children={"Apply"} typeBtn={'flat'} className="parameters__button" />
     </div>
   )
 }

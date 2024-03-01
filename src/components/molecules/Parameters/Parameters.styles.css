@@ -8,24 +8,24 @@
   gap: 25px;
 }
 
-.parameters-title {
+.parameters__title {
   font-weight: 600;
   font-size: 24px;
   color: var(--text);
 }
 
-.button-full-width {
+.parameters__button {
   width: 100%;
 }
 
-.categories-title {
+.parameters__categories-title {
   font-weight: 600;
   font-size: 16px;
   color: var(--text);
   margin: 0;
 }
 
-.categories-container {
+.parameters__categories-container {
   display: grid;
   border: 1px solid #DBBBA9;
   grid-template-columns: 1fr 1fr;
@@ -34,7 +34,7 @@
   gap: 0;
 }
 
-.category {
+.parameters__category {
   border: 1px solid #DBBBA9;
   background-color: transparent;
   display: flex;
@@ -47,6 +47,6 @@
   color: var(--text);
 }
 
-.category:hover {
+.parameters__category:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }

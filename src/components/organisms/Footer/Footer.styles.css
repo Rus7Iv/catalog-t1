@@ -1,4 +1,4 @@
-footer {
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@ footer {
   height: 80px;
 }
 
-.footer-container {
+.footer__container {
   position: relative;
   z-index: 10;
   max-width: 1201px;

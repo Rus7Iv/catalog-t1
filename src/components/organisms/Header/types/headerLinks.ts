@@ -1,4 +1,4 @@
-import { NavLink } from "../../Navigation/types/interfaces"
+import { NavLink } from "../../../molecules/Navigation/types/interfaces"
 
 export const HEADER_LINKS: NavLink[] = [
   { href: '#catalog', text: 'Catalog' },

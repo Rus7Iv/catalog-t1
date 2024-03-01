@@ -23,19 +23,19 @@ const Faq = () => {
 
   return(
     <div className='faq'>
-      <div className='faq-container'>
-        <h1 className='faq-title'>
+      <div className='faq__container'>
+        <h1 className='faq__title'>
           FAQ
         </h1>
-        <div className='faq-list'>
+        <div className='faq__list'>
           {questions.map((item: IQuestion, index: number) => (
-            <div key={index} className='faq-card'>
-              <div className='faq-questions'>
-                <div className={`faq-question--title-container ${item.isOpen ? 'open' : ''}`}>
-                  <span className='faq-question--title'>{item.title}</span>
-                  <button onClick={() => toggleQuestion(index)} className='faq-question--btn'><PlusBtn /></button>
+            <div key={index} className='faq__card'>
+              <div className='faq__questions'>
+                <div className={`faq__question-title-container ${item.isOpen ? 'faq__question-title-container--open' : ''}`}>
+                  <span className='faq__question-title'>{item.title}</span>
+                  <button onClick={() => toggleQuestion(index)} className='faq__question-btn'><PlusBtn /></button>
                 </div>
-                <div className={`faq-question--text ${item.isOpen ? 'open' : ''}`}>{item.value}</div>
+                <div className={`faq__question-text ${item.isOpen ? 'faq__question-text--open' : ''}`}>{item.value}</div>
               </div>
             </div>
           ))}
@@ -46,3 +46,4 @@ const Faq = () => {
 }
 
 export default Faq
+

@@ -2,8 +2,8 @@ import './Admin.styles.css'
 
 const Admin = () => {
   return (
-    <div className="admin-template">
-      <h1>Admin Page</h1>
+    <div className="admin">
+      <h1 className="admin__title">Admin Page</h1>
     </div>
   )
 }

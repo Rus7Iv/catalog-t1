@@ -4,7 +4,7 @@ import './Footer.styles.css'
 
 const Footer = () => (
   <footer className='footer'>
-    <div className='footer-container'>
+    <div className='footer__container'>
       <Navigation navLinks={FOOTER_LINKS} />
     </div>
   </footer>

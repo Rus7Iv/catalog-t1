@@ -10,12 +10,12 @@ interface ButtonProps {
 }
 
 const Button = ({ typeBtn, children, isActive = false, className = '', onClick }: ButtonProps) => {
-  const buttonStyle = typeBtn === 'filled' && isActive ? 'active' : typeBtn;
+  const buttonStyle = `button--${typeBtn}${isActive && typeBtn === 'filled' ? ' button--active' : ''}`
   return (
-    <button className={`button-container ${buttonStyle} ${className}`} onClick={onClick}>
+    <button className={`button ${buttonStyle} ${className}`} onClick={onClick}>
       {children}
     </button>
-  );
+  )
 }
 
 export default Button;

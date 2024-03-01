@@ -8,7 +8,7 @@ import './Main.styles.css'
 
 const Main = () => {
   return (
-    <div className="main-template">
+    <div className="main">
       <Hero />
       <div id="catalog"><Catalog /></div>
       <div id="aboutus"><AboutUs /></div>

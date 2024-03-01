@@ -4,7 +4,7 @@ import './Header.styles.css'
 
 const Header = () => (
   <header className='header'>
-    <div className='header-container'>
+    <div className='header__container'>
       <Navigation navLinks={HEADER_LINKS} />
     </div>
   </header>

@@ -1,49 +1,40 @@
-.button-container.filled {
+.button {
   font-family: var(--font-family);
   cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.button--filled {
   border: 1px solid var(--sec-bg);
   background: var(--text);
   border-radius: 4px;
   padding: 20px 50px;
-  font-weight: 400;
-  font-size: 16px;
   color: #fff;
 }
 
-.button-container.outlined {
-  font-family: var(--font-family);
-  cursor: pointer;
+.button--outlined {
   border: 1px solid var(--text);
   background: transparent;
   border-radius: 4px;
   padding: 25px 50px;
-  font-weight: 400;
-  font-size: 16px;
   color: var(--text);
 }
 
-.button-container.flat {
-  font-family: var(--font-family);
-  cursor: pointer;
+.button--flat {
   background: transparent;
   border: none;
-  font-weight: 400;
-  font-size: 16px;
   color: var(--text);
 }
 
-.button-container.active {
-  font-family: var(--font-family);
-  cursor: pointer;
+.button--active {
   border: none;
   background: var(--accent);
   border-radius: 4px;
   padding: 25px 50px;
-  font-weight: 400;
-  font-size: 16px;
   color: #fff;
 }
 
-.button-container:hover {
+.button:hover {
   filter: brightness(90%);
 }

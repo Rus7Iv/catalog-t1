@@ -30,25 +30,25 @@ const Question = () => {
 
   return(
   <div className='question'>
-    <div className='question-container'>
-      <h1 className='question-title'>
+    <div className='question__container'>
+      <h1 className='question__title'>
         We will select the perfect product for you
       </h1>
-      <span className='question-description'>
+      <span className='question__description'>
        Answer three questions and we will send you a catalog with the most suitable products for you.
       </span>
-      <div className='question-categories-container'>
-        <h3 className='question-categories-title'>
+      <div className='question__categories-container'>
+        <h3 className='question__categories-title'>
           What type of product are you considering?
         </h3>
-        <div className='question-categories-list'>
+        <div className='question__categories-list'>
           {currentItems.map((category, index) => (
             <div key={index} className='category-item'>
-              <div className='category-img-container'>
-                <img src={category.img ? category.img : "/non_image.png"} alt={category.name} className='category-img' />
+              <div className='category-item__img-container'>
+                <img src={category.img ? category.img : "/non_image.png"} alt={category.name} className='category-item__img' />
               </div>
-              <div className='category-radiobutton'>
-                <input type="checkbox" id={`category-${index}`} name={category.name} value={category.name} className='category-checkbox'/>
+              <div className='category-item__radiobutton'>
+                <input type="checkbox" id={`category-${index}`} name={category.name} value={category.name} className='category-item__checkbox'/>
                 <span className='checkbox-label'>{category.name}</span>
               </div>
             </div>
@@ -57,8 +57,8 @@ const Question = () => {
       </div>
       <div className='pagination'>
         {currentPage} of {totalPageNum}
-        {currentPage > 1 && <Button children={'Previous'} typeBtn='outlined' className='pagination-btn' onClick={handleClickPrev} />}
-        {categories.length > indexOfLastItem && <Button children={'Next step'} typeBtn='outlined' className='pagination-btn' onClick={handleClickNext} />}
+        {currentPage > 1 && <Button children={'Previous'} typeBtn='outlined' className='pagination__btn' onClick={handleClickPrev} />}
+        {categories.length > indexOfLastItem && <Button children={'Next step'} typeBtn='outlined' className='pagination__btn' onClick={handleClickNext} />}
       </div>
     </div>
   </div>
