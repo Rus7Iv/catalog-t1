@@ -1,30 +1,17 @@
-import { useEffect, useState } from 'react';
 import './Catalog.styles.css'
 import Button from '../../atoms/Button/Button';
 import Parameters from '../../molecules/Parameters/Parameters';
-
-type BaseProduct = {
-  id: number;
-  image: string;
-  category: string;
-};
-
-type RequiredFields = {
-  name: string;
-  price: number;
-};
-
-type Product = Partial<BaseProduct> & Required<RequiredFields>;
+import { useGetProductsQuery } from '../../../api/api';
+import { SerializedError } from '@reduxjs/toolkit';
+import { Product } from './types/interface';
 
 const Catalog = () => {
-  const [products, setProducts] = useState<Product[]>([]);
+  const { data, error } = useGetProductsQuery(null);
+  const products = data?.products;
 
-  useEffect(() => {
-    fetch('http://localhost:4000/catalog')
-      .then(response => response.json())
-      .then(data => setProducts(data.slice(0, 9)))
-      .catch(error => console.error('Ошибка:', error));
-  }, []);
+  if (error) {
+    return <div>Произошла ошибка: {(error as SerializedError).message}</div>;
+  }
 
   return (
     <div className='catalog'>
@@ -32,13 +19,13 @@ const Catalog = () => {
       <div className='catalog__content'>
         <Parameters />
         <div className='catalog__list'>  
-          {products.map(product => (
-            product.name && product.price ? (
+          {products?.map((product: Product) => (
+            product.title && product.price ? (
               <div key={product.id} className='catalog__card'>
                 <div className='catalog__card-img'>
-                  <img src={product.image ? '/' + product.image : 'public/non_image.png'} alt={product.name} />
+                  <img src={product.image ? '/' + product.image : 'public/non_image.png'} alt={product.title} />
                 </div>
-                <h2 className='catalog__card-name'>{product.name}</h2>
+                <h2 className='catalog__card-name'>{product.title}</h2>
                 <p className='catalog__card-price'>{product.price} $</p>
               </div>
             ) : null
