@@ -23,7 +23,7 @@ const Catalog = () => {
             product.title && product.price ? (
               <div key={product.id} className='catalog__card'>
                 <div className='catalog__card-img'>
-                  <img src={product.image ? '/' + product.image : 'public/non_image.png'} alt={product.title} />
+                  <img src={product.images && product.images[0] ? product.images[0] : 'public/non_image.png'} alt={product.title} />
                 </div>
                 <h2 className='catalog__card-name'>{product.title}</h2>
                 <p className='catalog__card-price'>{product.price} $</p>
