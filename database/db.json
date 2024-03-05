@@ -74,67 +74,67 @@
     "categories": [
       {
         "name": "smartphones",
-        "img": "./public/sneakers.jpg"
+        "img": "/sneakers.jpg"
       },
       {
         "name": "laptops",
-        "img": "./public/sneakers.jpg"
+        "img": "/sneakers.jpg"
       },
       {
         "name": "sneakers",
-        "img": "./public/sneakers.jpg"
+        "img": "/sneakers.jpg"
       },
       {
         "name": "sneakers",
-        "img": "./public/sneakers.jpg"
+        "img": "/sneakers.jpg"
       },
       {
         "name": "sneakers",
-        "img": "./public/sneakers.jpg"
+        "img": "/sneakers.jpg"
       },
       {
         "name": "sneakers",
-        "img": "./public/sneakers.jpg"
+        "img": "/sneakers.jpg"
       },
       {
         "name": "sneakers",
-        "img": "./public/sneakers.jpg"
+        "img": "/sneakers.jpg"
       },
       {
         "name": "sneakers",
-        "img": "./public/sneakers.jpg"
+        "img": "/sneakers.jpg"
       }
     ],
     "team": [
       {
         "name": "Maxim",
         "current_position": "Administrator",
-        "img": "./public/team/maxim.png"
+        "img": "/team/maxim.png"
       },
       {
         "name": "Elena",
         "current_position": "HR Manager",
-        "img": "./public/team/elena.png"
+        "img": "/team/elena.png"
       },
       {
         "name": "Marina",
         "current_position": "Purchasing Manager",
-        "img": "./public/team/marina.jpg"
+        "img": "/team/marina.jpg"
       },
       {
         "name": "Anton",
         "current_position": "Designer",
-        "img": "./public/team/anton.png"
+        "img": "/team/anton.png"
       },
       {
         "name": "Alexander",
         "current_position": "Developer",
-        "img": "./public/team/alexander.png"
+        "img": "/team/alexander.png"
       },
       {
         "name": "Anna",
         "current_position": "Designer",
-        "img": "./public/team/anna.png"
+        "img": "/team/anna.png"
       }
     ],
     "questions": [

@@ -50,6 +50,7 @@
   position: relative;
   overflow: hidden;
   width: 380px;
+  height: 400px;
 }
 
 .team-member::before {
